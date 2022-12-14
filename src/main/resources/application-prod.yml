@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://containers-us-west-142.railway.app:$6691/railway
+    url: jdbc:mysql://containers-us-west-142.railway.app:$6691/railway
     username: root
     password: hhalChnfQ0mcAN8ZXjkQ
     name: spring-blog
