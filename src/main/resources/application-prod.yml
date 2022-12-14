@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://containers-us-west-142.railway.app:$6691/railway
-    username: root
-    password: hhalChnfQ0mcAN8ZXjkQ
+    url: jdbc:mysql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}
+    username: ${PROD_DB_USERNAME}
+    password: ${PROD_DB_PASSWORD}
     name: spring-blog
 
   sql:
