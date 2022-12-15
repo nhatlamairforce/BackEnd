@@ -79,9 +79,9 @@ public class CategoryController {
     }
 
     @GetMapping("/getAllAprtmentUser")
-    public List<ApartmentApplicationEntity> getAllUser(@RequestParam long id){
+    public List<ServiceApplicationEntity> getAllUser(@RequestParam long id){
         UserEntity user = userRepository.getUserFID(id);
-        return apartmentApplicationRepository.getUserApp(user);
+        return serviceApplicationRepository.getAllRole(user);
     }
     
     @GetMapping("/getAllCar")
